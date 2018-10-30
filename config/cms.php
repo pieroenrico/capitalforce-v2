@@ -381,4 +381,7 @@ return [
 
     'restrictBaseDir' => true,
 
+
+    'allowedAssetTypes' => ['jpg','jpeg','bmp','png','gif','css','js','woff','svg','ttf','eot','json','md','less','sass','scss','pdf','mp4','webm'],
+
 ];

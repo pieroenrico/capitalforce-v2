@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table tropa_treasury_'
+    - builder_table_create_tropa_treasury_.php
+1.0.3:
+    - 'Updated table tropa_treasury_'
+    - builder_table_update_tropa_treasury_.php
+1.0.4:
+    - 'Updated table tropa_treasury_'
+    - builder_table_update_tropa_treasury__2.php

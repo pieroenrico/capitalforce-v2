@@ -1,0 +1,29 @@
+{
+  "name": "capforce-v2",
+  "version": "1.0.0",
+  "description": "Capital Force Website",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pieroenrico/capitalforce-v2.git"
+  },
+  "author": "Tropa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pieroenrico/capitalforce-v2/issues"
+  },
+  "homepage": "https://github.com/pieroenrico/capitalforce-v2#readme",
+  "devDependencies": {
+    "laravel-elixir": "^6.0.0-18",
+    "laravel-elixir-livereload": "^1.1.6"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}

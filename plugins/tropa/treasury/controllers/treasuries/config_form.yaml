@@ -1,0 +1,10 @@
+name: Treasuries
+form: $/tropa/treasury/models/treasury/fields.yaml
+modelClass: Tropa\Treasury\Models\Treasury
+defaultRedirect: tropa/treasury/treasuries
+create:
+    redirect: 'tropa/treasury/treasuries/update/:id'
+    redirectClose: tropa/treasury/treasuries
+update:
+    redirect: tropa/treasury/treasuries
+    redirectClose: tropa/treasury/treasuries

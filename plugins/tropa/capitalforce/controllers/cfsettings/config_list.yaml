@@ -1,0 +1,12 @@
+title: CFSettings
+modelClass: Tropa\CapitalForce\Models\CFSetting
+list: $/tropa/capitalforce/models/cfsetting/columns.yaml
+recordUrl: 'tropa/capitalforce/cfsettings/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: 1
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

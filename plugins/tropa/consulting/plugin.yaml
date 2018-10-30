@@ -1,0 +1,11 @@
+plugin:
+    name: 'tropa.consulting::lang.plugin.name'
+    description: 'tropa.consulting::lang.plugin.description'
+    author: Tropa
+    icon: oc-icon-bank
+    homepage: ''
+navigation:
+    main-menu-item2:
+        label: 'tropa.consulting::lang.plugin.name'
+        url: tropa/consulting/consultings
+        icon: icon-bank

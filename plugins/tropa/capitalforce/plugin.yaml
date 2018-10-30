@@ -1,0 +1,11 @@
+plugin:
+    name: 'tropa.capitalforce::lang.plugin.name'
+    description: 'tropa.capitalforce::lang.plugin.description'
+    author: Tropa
+    icon: oc-icon-cog
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Capital Force'
+        url: tropa/capitalforce/cfsettings
+        icon: icon-cog

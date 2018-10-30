@@ -1,0 +1,33 @@
+fields:
+    title:
+        label: Title
+        span: full
+        type: text
+    subtitle:
+        label: Subtitle
+        span: full
+        type: text
+    intro:
+        label: Intro
+        size: large
+        span: full
+        type: richeditor
+    image:
+        label: Image
+        mode: image
+        imageWidth: '200'
+        imageHeight: '200'
+        fileTypes: svg
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text

@@ -1,0 +1,10 @@
+name: Consultings
+form: $/tropa/consulting/models/consulting/fields.yaml
+modelClass: Tropa\Consulting\Models\Consulting
+defaultRedirect: tropa/consulting/consultings
+create:
+    redirect: 'tropa/consulting/consultings/update/:id'
+    redirectClose: tropa/consulting/consultings
+update:
+    redirect: tropa/consulting/consultings
+    redirectClose: tropa/consulting/consultings

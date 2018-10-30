@@ -1,0 +1,11 @@
+plugin:
+    name: 'tropa.treasury::lang.plugin.name'
+    description: 'tropa.treasury::lang.plugin.description'
+    author: Tropa
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'tropa.treasury::lang.plugin.name'
+        url: tropa/treasury/treasuries
+        icon: icon-book

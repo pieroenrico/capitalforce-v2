@@ -1,0 +1,26 @@
+fields:
+    title:
+        label: Title
+        span: full
+        type: text
+    subtitle:
+        label: Subtitle
+        span: full
+        type: text
+    intro:
+        label: Intro
+        span: full
+        size: ''
+        type: textarea
+    image:
+        label: Image
+        span: auto
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        imageWidth: '200'
+        imageHeight: '200'
+        fileTypes: svg
+        type: fileupload

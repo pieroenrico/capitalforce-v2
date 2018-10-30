@@ -1,0 +1,17 @@
+fields:
+    social_fb:
+        label: Facebook
+        span: auto
+        type: text
+    social_tw:
+        label: Twitter
+        span: auto
+        type: text
+    social_ig:
+        label: Instagram
+        span: auto
+        type: text
+    social_web:
+        label: Website
+        span: auto
+        type: text

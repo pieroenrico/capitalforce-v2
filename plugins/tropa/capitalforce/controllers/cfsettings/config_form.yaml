@@ -1,0 +1,10 @@
+name: CFSettings
+form: $/tropa/capitalforce/models/cfsetting/fields.yaml
+modelClass: Tropa\CapitalForce\Models\CFSetting
+defaultRedirect: tropa/capitalforce/cfsettings
+create:
+    redirect: 'tropa/capitalforce/cfsettings/update/:id'
+    redirectClose: tropa/capitalforce/cfsettings
+update:
+    redirect: tropa/capitalforce/cfsettings
+    redirectClose: tropa/capitalforce/cfsettings

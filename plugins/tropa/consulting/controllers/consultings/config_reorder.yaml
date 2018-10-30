@@ -1,0 +1,4 @@
+title: Consultings
+modelClass: Tropa\Consulting\Models\Consulting
+toolbar:
+    buttons: reorder_toolbar

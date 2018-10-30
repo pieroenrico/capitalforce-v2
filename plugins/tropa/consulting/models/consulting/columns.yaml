@@ -1,0 +1,9 @@
+columns:
+    title:
+        label: Title
+        type: text
+        searchable: true
+        sortable: true
+    subtitle:
+        label: Subtitle
+        type: text

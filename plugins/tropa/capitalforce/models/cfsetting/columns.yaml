@@ -1,0 +1,13 @@
+columns:
+    social_fb:
+        label: Facebook
+        type: text
+    social_tw:
+        label: Twitter
+        type: text
+    social_ig:
+        label: Instagram
+        type: text
+    social_web:
+        label: Website
+        type: text

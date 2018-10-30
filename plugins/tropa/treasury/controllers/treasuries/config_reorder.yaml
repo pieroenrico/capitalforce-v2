@@ -1,0 +1,4 @@
+title: Treasuries
+modelClass: Tropa\Treasury\Models\Treasury
+toolbar:
+    buttons: reorder_toolbar

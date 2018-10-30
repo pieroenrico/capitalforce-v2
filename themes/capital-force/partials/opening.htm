@@ -1,0 +1,48 @@
+[builderDetails]
+modelClass = "Tropa\CapitalForce\Models\CFSetting"
+identifierValue = "1"
+modelKeyColumn = "id"
+displayColumn = "social_fb"
+notFoundMessage = "Record not found"
+==
+<section id="home">
+    <div class="instructions">
+        <a href="#consulting" class="navigator">Scroll Down <i class="fa fa-long-arrow-down"></i></a>
+    </div>
+    <div class="contents row no-gutters">
+        <div class="col-2 pl-25">
+            <div class="welcome" data-aos="fade" data-aos-delay="800">
+                <div class="mod consulting" alt="">
+                    <h1>Accelerating transformations to improve performance</h1>
+                    <a href="#consulting" class="navigator">Know more &gt;</a>
+                </div>
+                <div class="mod treasury" alt="">
+                    <h1>Treasury for tomorrow</h1>
+                    <a href="#treasury" class="navigator">Know more &gt;</a>
+                </div>
+                <div class="mod it" alt="">
+                    <h1>IT Delivery</h1>
+                    <a href="#it" class="navigator">Know more &gt;</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-8 center-vh">
+            <img src="{{ 'logo-capital-force-white.svg'|media }}" alt="" data-aos="fade" data-aos-delay="500" >
+        </div>
+        <div class="col-2" data-aos="fade" data-aos-delay="1200">
+            <div class="social text-right pr-15" alt="">
+                <ul>
+                    {% if record.social_ig != '' %}<li><a href="{{ record.social_ig }}"><i class="fa fa-instagram"></i></a></li>{% endif %}
+                    {% if record.social_tw != '' %}<li><a href="{{ record.social_tw }}"><i class="fa fa-twitter"></i></a></li>{% endif %}
+                    {% if record.social_fb != '' %}<li><a href="{{ record.social_fb }}"><i class="fa fa-facebook"></i></a></li>{% endif %}
+                    {% if record.social_web != '' %}<li><a href="{{ record.social_web }}"><i class="fa fa-globe"></i></a></li>{% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+        <source src="{{ 'assets/dist/videos/bgvideo.webm'|theme }}" type="video/webm">
+        <source src="{{ 'assets/dist/videos/bgvideo.mp4'|theme }}" type="video/mp4">
+    </video>
+</section>
