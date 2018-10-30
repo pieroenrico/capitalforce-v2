@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'http://capforcev2.local',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'key' => 'base64:k/RgIuH9/YR1twVwWbNksWzt7bnmScruoxge9Zkg2wI=',
+    'key' => 'gYeWjAW6FGuBFrfQzj9fOVoa3Y0I0rxL',
 
     'cipher' => 'AES-256-CBC',
 

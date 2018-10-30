@@ -1,0 +1,66 @@
+[builderList]
+modelClass = "Tropa\Consulting\Models\Consulting"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<section id="consulting" class="moduler">
+
+    <div class="row justify-content-center mb-40 no-gutters row-eq-height paroller"  data-paroller-factor="0.1" data-paroller-type="foreground" data-paroller-direction="horizontal">
+        <div class="col-4 pr-20">
+            <div class="body">
+                <div class="copy">
+                    <h1 class="standard mb-20">Consulting</h1>
+                    <p><span class="text-main-red">&gt;</span> Capital Force performs deep analysis to challenge the established thinking and drive
+                        change within organizations. We work with our clients to build the capabilities to enable
+                        organizations to achieve sustainable advantages.</p>
+                </div>
+
+                <div class="highlight">
+                    <div class="row no-gutters">
+                        <div class="col-2">
+                            <img src="{{ 'assets/dist/img/logo-small.svg'|theme }}" alt="" class="center-vh">
+                        </div>
+                        <div class="col-10">
+                            We help our clients make significant and lasting improvements to their performance. We
+                            bring external and objective advice to shape the future. Together.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="img-wrapper"></div>
+        </div>
+    </div>
+
+    {% set records = builderList.records %}
+    {% set displayColumn = builderList.displayColumn %}
+    {% set noRecordsMessage = builderList.noRecordsMessage %}
+    {% set detailsPage = builderList.detailsPage %}
+    {% set detailsKeyColumn = builderList.detailsKeyColumn %}
+    {% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+    {% for record in records %}
+    <div class="row justify-content-center mt-20 mb-20 mod no-gutters paroller">
+        <div class="col-4 bg-main-red">
+            <div class="img-wrapper" style="background: url('{{ record.image.path }}') no-repeat 50% 50%;"></div>
+        </div>
+        <div class="col-4 bg-main-gray">
+            <div class="copy"
+                <h2 class="standard">{{ record.title }}</h2>
+                <h3 class="standard mb-40">{{ record.subtitle }}</h3>
+                <p>{{ record.intro }}</p>
+                <div class="text-right mt-40">
+                    <a href="" class="btn btn-primary btn-main-red btn-w-md">More &gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+</section>

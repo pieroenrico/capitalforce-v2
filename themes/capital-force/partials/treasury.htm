@@ -1,0 +1,77 @@
+[builderList]
+modelClass = "Tropa\Treasury\Models\Treasury"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<section id="treasury" class="moduler">
+
+    <div class="row justify-content-center mb-40 no-gutters paroller" data-paroller-factor="0.1" data-paroller-type="foreground" data-paroller-direction="horizontal">
+        <div class="col-4 p-20">
+            <div class="body">
+                <div class="copy">
+                    <h1 class="standard mb-20">Treasury</h1>
+                    <p><span class="text-main-red">&gt;</span> Capital Force has established a strategic alliance with Cashforce which provides a “next
+                        generation” Cash management solution to help finance / treasury departments to save
+                        time and money by offering accurate cash flow forecasting, flexible treasury reporting and
+                        automation.</p>
+                </div>
+
+                <div class="highlight">
+                    <div class="row no-gutters">
+                        <div class="col-2">
+                            <img src="{{ 'assets/dist/img/logo-small-color.svg'|theme }}" alt="">
+                        </div>
+                        <div class="col-10">
+                            Capital Force’s partnership allow us to help clients to address today’s challenges and
+                            capitalize on tomorrow’s opportunities by giving access to critical decision making
+                            information.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="img-wrapper"></div>
+        </div>
+    </div>
+
+    {% set records = builderList.records %}
+    {% set displayColumn = builderList.displayColumn %}
+    {% set noRecordsMessage = builderList.noRecordsMessage %}
+    {% set detailsPage = builderList.detailsPage %}
+    {% set detailsKeyColumn = builderList.detailsKeyColumn %}
+    {% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+    <div class="row justify-content-center mod no-gutters paroller"  data-paroller-factor="-0.1" data-paroller-type="foreground" data-paroller-direction="horizontal">
+        <div class="col-4">
+            <div class="row no-gutters">
+
+                {% for record in records %}
+                <div class="col-6 bt no-padding mb-15 {{ loop.index == 1 ? 'active' : '' }}" data-target="{{ record.slug }}">
+                    <div class="title">
+                        <h3 class="center-vh">{{ record.title }}</h3>
+                    </div>
+                    <div class="icon"></div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+        <div class="col-4">
+            {% for record in records %}
+            <div class="copy {{ loop.index == 1 ? 'active' : '' }}" id="{{ record.slug }}">
+                <h2 class="standard">{{ record.title }}</h2>
+                <h3 class="standard mb-40">{{ record.subtitle }}</h3>
+                {{ record.intro|raw }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
