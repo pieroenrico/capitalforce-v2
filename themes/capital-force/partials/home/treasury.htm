@@ -7,6 +7,8 @@ noRecordsMessage = "No records found"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+
+[editable]
 ==
 <section id="treasury" class="moduler">
 
@@ -14,11 +16,7 @@ pageNumber = "{{ :page }}"
         <div class="col-4 p-20">
             <div class="body">
                 <div class="copy">
-                    <h1 class="standard mb-20">Treasury</h1>
-                    <p><span class="text-main-red">&gt;</span> Capital Force has established a strategic alliance with Cashforce which provides a “next
-                        generation” Cash management solution to help finance / treasury departments to save
-                        time and money by offering accurate cash flow forecasting, flexible treasury reporting and
-                        automation.</p>
+                    {% component 'editable' file='treasury/intro.htm' %}
                 </div>
 
                 <div class="highlight">
@@ -27,10 +25,7 @@ pageNumber = "{{ :page }}"
                             <img src="{{ 'logo-small-color.svg'|media }}" alt="">
                         </div>
                         <div class="col-10">
-                            Capital Force’s partnership allow us to help clients to address today’s challenges and
-                            capitalize on tomorrow’s opportunities by giving access to critical decision making
-                            information.
-
+                            {% component 'editable' file='treasury/bottom.htm' %}
                         </div>
                     </div>
                 </div>

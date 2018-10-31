@@ -10,16 +10,16 @@ function clearForm() {
 }
 function modeScrolled() {
     $(".social, .instructions").addClass('hidden')
-    $('.topbar').removeClass('inverted')
+    $('.topbar.scrollable').removeClass('inverted')
     $('.back-to-top').fadeIn()
 }
 function modeTop() {
     $(".social, .instructions").removeClass('hidden')
-    $('.topbar').addClass('inverted')
+    $('.topbar.scrollable').addClass('inverted')
     $('.back-to-top').hide()
 }
 function checkScroll() {
-    if($(window).scrollTop() > $('header').height()) {
+    if($(window).scrollTop() > $('header.scrollable').height()) {
         modeScrolled()
     } else {
         modeTop()

@@ -1,140 +1,27 @@
-description = "Default layout"
+description = "Blog Layout"
 ==
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
 
-    <title>Capital Force - {{ this.page.title }} </title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,300i" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ 'assets/vendor/css/core.min.css'|theme }}" rel="stylesheet">
-    <link href="{{ 'assets/vendor/css/app.min.css'|theme }}" rel="stylesheet">
-    <link href="{{ 'assets/vendor/css/style.min.css'|theme }}" rel="stylesheet">
-    <link href="{{ 'assets/dist/css/styles.css'|theme }}" rel="stylesheet">
-
-    <!-- Favicons -->
-    <link rel="icon" href="{{ 'favicon.png'|media }}">
-
-</head>
+{% partial 'head' %}
 
 <body>
 
-<!-- Preloader -->
-<div class="preloader">
-    <div class="spinner-dots">
-        <span class="dot1"></span>
-        <span class="dot2"></span>
-        <span class="dot3"></span>
-    </div>
-</div>
-
-
-<header class="topbar inverted">
-    <div class="topbar-left">
-
-
-        <div class="topbar-title logo logo-small">
-            <a href="#home" class="navigator"><img src="{{ 'logo-small.svg'|media }}" alt=""></a>
-        </div>
-
-    </div>
-
-    <div class="topbar-right">
-        <nav class="topbar-navigation">
-            <ul class="menu">
-
-                <li class="menu-item active"><a class="menu-link navigator" href="#home"><span class="title">Home</span></a></li>
-                <li class="menu-item"><a class="menu-link navigator" href="#consulting"><span class="title">Consulting</span></a></li>
-                <li class="menu-item"><a class="menu-link navigator" href="#treasury"><span class="title">Treasury</span></a></li>
-                <li class="menu-item"><a class="menu-link navigator" href="#it"><span class="title">IT Delivery</span></a></li>
-                <li class="menu-item"><a class="menu-link navigator" href="#alliance"><span class="title">Alliance</span></a></li>
-                <li class="menu-item"><a class="menu-link navigator" href="#contact"><span class="title">Contact</span></a></li>
-                <li class="menu-item"><a class="menu-link notifications" href="#"><i class="title fa fa-bell"></i></a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
+{% partial 'preloader' %}
+{% partial 'header' %}
 
 <!-- Main container -->
 <main class="main-container">
 
     <div class="main-content no-padding">
-
-
         {% page %}
-
     </div><!--/.main-content -->
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-2 copyright">
-                <img src="{{ 'logo-small.svg'|media }}" alt="">
-                <div class="copy">&copy;2018 Capital Force</div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-2 navigation">
-                <ul class="menu">
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Soluciones</a></li>
-                    <li><a href="">Expertise</a></li>
-                    <li><a href="">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-2 social">
-                <ul class="menu">
-                    <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
-                    <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
-                    <li><a href=""><i class="fa fa-instagram"></i> Instagram</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-2 newsletter">
-                <h5>Suscríbase a nuestro newsletter</h5>
-
-                <div class="alert alert-danger" role="alert">
-                    This is a danger alert—check it out!
-                </div>
-                <div class="alert alert-success" role="alert">
-                    This is a danger alert—check it out!
-                </div>
-
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Correo electrónico" id="input-newsletter">
-                    <span class="input-group-append">
-                        <button class="btn btn-light submitter" type="button">Ok</button>
-                      </span>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 text-right address">
-                <p>Avenida 123, CP 124, CDMX <br />
-                    +1 55 6892 1289 <br />
-                    {# <a href="">contacto@capitalforce.com.mx</a> #}
-                </p>
-            </div>
-
-        </div>
-    </footer>
-    <!-- END Footer -->
-
+    {% partial 'footer' %}
 </main>
 <!-- END Main container -->
 
-
-
-<!-- Scripts -->
-<script src="{{ 'assets/vendor/js/core.min.js'|theme }}"></script>
-<script src="{{ 'assets/vendor/js/app.min.js'|theme }}"></script>
-<script src="{{ 'assets/vendor/js/script.min.js'|theme }}"></script>
-<script src="{{ 'assets/dist/js/all.js'|theme }}"></script>
-{% framework extras %}
-{% scripts %}
+{% partial 'scripts' %}
 
 </body>
 </html>

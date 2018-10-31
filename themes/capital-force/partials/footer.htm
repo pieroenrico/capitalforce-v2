@@ -1,0 +1,55 @@
+[builderDetails]
+modelClass = "Tropa\CapitalForce\Models\CFSetting"
+identifierValue = "1"
+modelKeyColumn = "id"
+displayColumn = "social_fb"
+notFoundMessage = "Record not found"
+
+[editable]
+==
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-2 copyright">
+            <img src="{{ 'logo-small.svg'|media }}" alt="">
+            <div class="copy">&copy;2018 Capital Force</div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-2 navigation">
+            <ul class="menu">
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Soluciones</a></li>
+                <li><a href="">Expertise</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-2 social">
+            <ul class="menu">
+                {% if record.social_fb != '' %}<li><a href="{{ record.social_fb }}"><i class="fa fa-facebook"></i> Facebook</a></li>{% endif %}
+                {% if record.social_tw != '' %}<li><a href="{{ record.social_tw }}"><i class="fa fa-twitter"></i> Twitter</a></li>{% endif %}
+                {% if record.social_ig != '' %}<li><a href="{{ record.social_ig }}"><i class="fa fa-instagram"></i> Instagram</a></li>{% endif %}
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-2 newsletter">
+            <h5>Suscríbase a nuestro newsletter</h5>
+
+            <div class="alert alert-danger" role="alert">
+                This is a danger alert—check it out!
+            </div>
+            <div class="alert alert-success" role="alert">
+                This is a danger alert—check it out!
+            </div>
+
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Correo electrónico" id="input-newsletter">
+                <span class="input-group-append">
+                        <button class="btn btn-light submitter" type="button">Ok</button>
+                      </span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 text-right address">
+            {% component 'editable' file='address.htm' %}
+        </div>
+
+    </div>
+</footer>
+<!-- END Footer -->

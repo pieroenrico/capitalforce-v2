@@ -7,6 +7,8 @@ noRecordsMessage = "No records found"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+
+[editable]
 ==
 <section id="consulting" class="moduler">
 
@@ -14,10 +16,7 @@ pageNumber = "{{ :page }}"
         <div class="col-4 pr-20">
             <div class="body">
                 <div class="copy">
-                    <h1 class="standard mb-20">Consulting</h1>
-                    <p><span class="text-main-red">&gt;</span> Capital Force performs deep analysis to challenge the established thinking and drive
-                        change within organizations. We work with our clients to build the capabilities to enable
-                        organizations to achieve sustainable advantages.</p>
+                    {% component 'editable' file='consulting/intro.htm' %}
                 </div>
 
                 <div class="highlight">
@@ -26,8 +25,7 @@ pageNumber = "{{ :page }}"
                             <img src="{{ 'logo-small.svg'|media }}" alt="" class="center-vh">
                         </div>
                         <div class="col-10">
-                            We help our clients make significant and lasting improvements to their performance. We
-                            bring external and objective advice to shape the future. Together.
+                            {% component 'editable' file='consulting/bottom.htm' %}
                         </div>
                     </div>
                 </div>

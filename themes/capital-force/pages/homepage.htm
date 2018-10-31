@@ -1,18 +1,21 @@
-title = "Homepage"
+title = "Home"
 url = "/"
 layout = "capforce"
 is_hidden = 0
+
+[editable]
+file = "opening/link1.htm"
 ==
 {% partial 'back' %}
 <div class="container-fluid no-padding home">
-    {% partial 'blog' %}
-    {% partial 'opening' %}
-    {% partial 'consulting' %}
-    {% partial 'treasury' %}
+    {% partial 'home/blog' %}
+    {% partial 'home/opening' %}
+    {% partial 'home/consulting' %}
+    {% partial 'home/treasury' %}
     <div class="big-temp">
-        {% partial 'it-delivery' %}
-        {% partial 'alliance' %}
+        {% partial 'home/it-delivery' %}
+        {% partial 'home/alliance' %}
     </div>
-    {% partial 'contact' %}
+    {% partial 'home/contact' %}
 
 </div>

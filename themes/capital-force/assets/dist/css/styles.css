@@ -9579,6 +9579,85 @@ h3.standard {
   text-align: center;
 }
 
+.blog ul.category-list {
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+
+.blog ul.category-list li {
+  margin: 0;
+  padding: 10px 0;
+  list-style-type: none;
+  border-bottom: 1px solid #efefef;
+}
+
+.blog ul.category-list li a {
+  color: #ED1C24;
+}
+
+.blog ul.category-list li .badge {
+  background: #333;
+  border-radius: 2px;
+  padding: 2px 5px;
+  color: #fff;
+}
+
+.blog h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+  color: #ED1C24;
+}
+
+.blog h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+
+.blog .post {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.blog .post a {
+  text-decoration: none;
+}
+
+.blog .post a h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.blog .post a:hover {
+  color: #ED1C24;
+}
+
+.blog .post .meta {
+  font-size: 14px;
+  color: #999;
+}
+
+.blog .post .meta a {
+  color: #ED1C24;
+  text-decoration: none;
+}
+
+.blog .post img {
+  background-color: #f00;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.blog .post:last-child {
+  border-bottom: none;
+}
+
 /*
 H1: Open Sans Regular 40
 H2: Open Sans Light 20

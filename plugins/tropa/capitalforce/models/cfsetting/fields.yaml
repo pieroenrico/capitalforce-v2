@@ -15,3 +15,7 @@ fields:
         label: Website
         span: auto
         type: text
+    display_scroll:
+        label: 'Display Scroll?'
+        span: auto
+        type: switch
