@@ -54,11 +54,11 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => '127.0.0.1',
+            'host'      => env('DATABASE_HOST'),
             'port'      => 3306,
-            'database'  => 'capforce',
-            'username'  => 'root',
-            'password'  => 'momias',
+            'database'  => env('DATABASE_DATABASE'),
+            'username'  => env('DATABASE_USER'),
+            'password'  => env('DATABASE_PASSWORD'),
             'charset'   => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix'    => '',
