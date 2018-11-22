@@ -183,4 +183,14 @@ and (orientation : portrait) {
     }
   }
 
+  .blog {
+    margin-top: 50px;
+    .categories,
+    .post {
+      padding: 0 20px !important;
+    }
+    .categories {
+      padding: 20px 40px !important;
+    }
+  }
 }

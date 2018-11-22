@@ -9742,6 +9742,10 @@ h3.standard {
   text-align: center;
 }
 
+.blog {
+  margin-top: 100px;
+}
+
 .blog ul.category-list {
   margin: 30px 0 0 0;
   padding: 0;
@@ -9980,6 +9984,16 @@ header.mobile {
   }
   .site-footer .address {
     text-align: left !important;
+  }
+  .blog {
+    margin-top: 50px;
+  }
+  .blog .categories,
+  .blog .post {
+    padding: 0 20px !important;
+  }
+  .blog .categories {
+    padding: 20px 40px !important;
   }
 }
 

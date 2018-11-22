@@ -35,13 +35,17 @@ function onEnd()
 
         <div class="col-xs-8 col-sm-8 col-md-6">
 
-            {% if this.param.category == "" %}
+            <div class="post">
+                {% if this.param.category == "" %}
                 <h1 class="mb-30">Recent News</h1>
-            {% else %}
+                {% else %}
                 <h1 class="mb-30">{{ category_name }}</h1>
-            {% endif %}
+                {% endif %}
+            </div>
 
-            {% component 'editable' file='blog/intro.htm' %}
+            <div class="post">
+                {% component 'editable' file='blog/intro.htm' %}
+            </div>
 
             {% set posts = blogPosts.posts %}
 
@@ -89,7 +93,7 @@ function onEnd()
             {% endif %}
         </div>
 
-        <div class="col-xs-4 col-sm-4 col-md-2">
+        <div class="col-xs-12 col-sm-12 col-md-2 categories">
 
             <h2>Categories</h2>
 
