@@ -47,6 +47,13 @@ $(document).ready(function(){
         $(this).addClass('active');
         $('#treasury .copy#' + $(this).data('target')).hide().addClass('active').fadeIn(1000);
     });
+    $(document).on('click', '#ai .bt', function(e){
+        e.preventDefault();
+        $('#ai .bt').removeClass('active');
+        $('#ai .copy').removeClass('active');
+        $(this).addClass('active');
+        $('#ai .copy#' + $(this).data('target')).hide().addClass('active').fadeIn(1000);
+    });
     $(document).on('click', '#contact .submitter', function(e){
         e.preventDefault();
 

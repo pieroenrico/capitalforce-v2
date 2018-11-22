@@ -1,0 +1,11 @@
+plugin:
+    name: 'tropa.alliances::lang.plugin.name'
+    description: 'tropa.alliances::lang.plugin.description'
+    author: Tropa
+    icon: oc-icon-link
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Alliances
+        url: tropa/alliances/alliances
+        icon: icon-link

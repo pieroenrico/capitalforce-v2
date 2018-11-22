@@ -1,0 +1,11 @@
+plugin:
+    name: 'tropa.artificialintelligence::lang.plugin.name'
+    description: 'tropa.artificialintelligence::lang.plugin.description'
+    author: Tropa
+    icon: oc-icon-connectdevelop
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: AI
+        url: tropa/artificialintelligence/artificialintelligences
+        icon: icon-connectdevelop

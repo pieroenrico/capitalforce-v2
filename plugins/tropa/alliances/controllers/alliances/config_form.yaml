@@ -1,0 +1,10 @@
+name: Alliances
+form: $/tropa/alliances/models/alliance/fields.yaml
+modelClass: Tropa\Alliances\Models\Alliance
+defaultRedirect: tropa/alliances/alliances
+create:
+    redirect: 'tropa/alliances/alliances/update/:id'
+    redirectClose: tropa/alliances/alliances
+update:
+    redirect: tropa/alliances/alliances
+    redirectClose: tropa/alliances/alliances

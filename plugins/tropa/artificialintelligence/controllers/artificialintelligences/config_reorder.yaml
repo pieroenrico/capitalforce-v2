@@ -1,0 +1,4 @@
+title: ArtificialIntelligences
+modelClass: Tropa\ArtificialIntelligence\Models\ArtificialIntelligence
+toolbar:
+    buttons: reorder_toolbar

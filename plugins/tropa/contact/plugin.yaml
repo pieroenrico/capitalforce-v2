@@ -1,0 +1,6 @@
+plugin:
+    name: 'tropa.contact::lang.plugin.name'
+    description: 'tropa.contact::lang.plugin.description'
+    author: Tropa
+    icon: oc-icon-envelope
+    homepage: ''

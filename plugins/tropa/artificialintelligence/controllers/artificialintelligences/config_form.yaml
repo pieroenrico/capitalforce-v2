@@ -1,0 +1,10 @@
+name: ArtificialIntelligences
+form: $/tropa/artificialintelligence/models/artificialintelligence/fields.yaml
+modelClass: Tropa\ArtificialIntelligence\Models\ArtificialIntelligence
+defaultRedirect: tropa/artificialintelligence/artificialintelligences
+create:
+    redirect: 'tropa/artificialintelligence/artificialintelligences/update/:id'
+    redirectClose: tropa/artificialintelligence/artificialintelligences
+update:
+    redirect: tropa/artificialintelligence/artificialintelligences
+    redirectClose: tropa/artificialintelligence/artificialintelligences

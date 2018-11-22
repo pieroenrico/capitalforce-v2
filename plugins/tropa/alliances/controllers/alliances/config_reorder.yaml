@@ -1,0 +1,4 @@
+title: Alliances
+modelClass: Tropa\Alliances\Models\Alliance
+toolbar:
+    buttons: reorder_toolbar

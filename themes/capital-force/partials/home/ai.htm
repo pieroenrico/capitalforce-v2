@@ -1,0 +1,76 @@
+[editable]
+
+[builderList]
+modelClass = "Tropa\ArtificialIntelligence\Models\ArtificialIntelligence"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<section id="ai" class="moduler">
+
+    <div class="row justify-content-center mb-40 no-gutters paroller">
+        <div class="col-4 p-20">
+            <div class="body">
+                <div class="copy">
+                    {%component 'editable' file="ai/intro.htm" %}
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="img-wrapper"></div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-40 network">
+        <div class="col-8">
+            {%component 'editable' file="ai/network.htm" %}
+        </div>
+    </div>
+
+
+    {% set records = builderList.records %}
+    {% set displayColumn = builderList.displayColumn %}
+    {% set noRecordsMessage = builderList.noRecordsMessage %}
+    {% set detailsPage = builderList.detailsPage %}
+    {% set detailsKeyColumn = builderList.detailsKeyColumn %}
+    {% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+    <div class="row justify-content-center mod no-gutters">
+        <div class="col-4">
+            <div class="row no-gutters">
+
+                {% for record in records %}
+                <div class="col-6 bt no-padding mb-15 {{ loop.index == 1 ? 'active' : '' }}" data-target="{{ record.slug }}">
+                    <div class="title">
+                        <div class="text-center">
+                            <img src="{{ record.image.path }}" alt="" class="mb-10">
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <div class="text-center">
+                            <img src="{{ record.image.path }}" alt="" class="mb-10">
+                            <h3>{{ record.title }}</h3>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+        <div class="col-4">
+
+            {% for record in records %}
+            <div class="copy {{ loop.index == 1 ? 'active' : '' }}" id="{{ record.slug }}">
+                <h2 class="standard mb-40">{{ record.title }}</h2>
+                {{ record.intro|raw }}
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+</section>

@@ -1,4 +1,14 @@
 [editable]
+
+[builderList]
+modelClass = "Tropa\Alliances\Models\Alliance"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
 <section id="alliance" class="moduler paroller"  data-paroller-factor="-0.1" data-paroller-type="foreground" data-paroller-direction="horizontal">
 
@@ -8,12 +18,18 @@
                 {% component 'editable' file='alliance/intro.htm' %}
             </div>
         </div>
-        <div class="col-4">
-            <div class="row">
-                <div class="col-4"><div class="img-wrapper"></div></div>
-                <div class="col-4"><div class="img-wrapper"></div></div>
-                <div class="col-4"><div class="img-wrapper"></div></div>
-            </div>
+
+        {% set records = builderList.records %}
+        {% set displayColumn = builderList.displayColumn %}
+        {% set noRecordsMessage = builderList.noRecordsMessage %}
+        {% set detailsPage = builderList.detailsPage %}
+        {% set detailsKeyColumn = builderList.detailsKeyColumn %}
+        {% set detailsUrlParameter = builderList.detailsUrlParameter %}
+        <div class="col-4 text-center">
+
+            {% for record in records %}
+                <img src="{{ record.image.path }}" alt="">
+            {% endfor %}
         </div>
     </div>
 
