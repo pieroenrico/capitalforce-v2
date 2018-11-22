@@ -364,7 +364,7 @@ h3.standard {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background: url($assets + 'img/poster.png') no-repeat;
     background-size: cover;
     transition: 1s opacity;
   }
@@ -838,3 +838,7 @@ H2: Open Sans Light 20
 H3: Open Sans Bold 20
 Body text: Arial Regular 14
  */
+header.mobile {
+  display: none;
+}
+@import 'mobile';

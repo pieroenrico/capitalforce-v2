@@ -9271,7 +9271,7 @@ h3.standard {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
-  background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
+  background: url("/themes/capital-force/assets/dist/img/poster.png") no-repeat;
   background-size: cover;
   transition: 1s opacity;
 }
@@ -9827,5 +9827,160 @@ H2: Open Sans Light 20
 H3: Open Sans Bold 20
 Body text: Arial Regular 14
  */
+header.mobile {
+  display: none;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .moduler {
+    padding: 20px !important;
+  }
+  header.topbar {
+    display: none;
+  }
+  header.mobile {
+    position: fixed;
+    z-index: 50000;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  header.mobile .opener {
+    cursor: pointer;
+    cursor: hand;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    color: #fff;
+    font-size: 20px;
+  }
+  header.mobile .opener i {
+    background: #ED1C24;
+    padding: 2px 4px;
+    border-radius: 2px;
+    color: #fff;
+  }
+  header.mobile .opener i.open {
+    display: block;
+  }
+  header.mobile .opener i.close {
+    display: none;
+  }
+  header.mobile .items {
+    display: none;
+    background: #ED1C24;
+  }
+  header.mobile .items .menu {
+    padding: 10px 0 !important;
+    padding-bottom: 0 !important;
+  }
+  header.mobile .items .menu li {
+    text-align: center;
+    border-bottom: 1px solid #600;
+  }
+  header.mobile .items .menu li:last-child {
+    border-bottom: none;
+  }
+  header.mobile .items .menu li .menu-link {
+    padding: 10px 0;
+    color: #fff !important;
+  }
+  header.mobile .items .menu li .menu-link span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  header.mobile.active {
+    background: #ED1C24;
+  }
+  header.mobile.active .items {
+    display: block;
+  }
+  header.mobile.active i.open {
+    display: none;
+  }
+  header.mobile.active i.close {
+    display: block;
+  }
+  #home .welcome, #home .social {
+    display: none !important;
+  }
+  #home .instructions {
+    text-align: center;
+  }
+  #consulting {
+    margin-top: 100vh;
+  }
+  #consulting .body {
+    padding-right: 0;
+  }
+  #consulting .highlight {
+    position: static;
+    margin: 0;
+  }
+  #consulting .pr-20 {
+    padding-right: 0 !important;
+  }
+  #consulting .img-wrapper {
+    margin-top: 10px;
+  }
+  #consulting .imager {
+    height: 170px;
+  }
+  #treasury .body {
+    position: static;
+  }
+  #treasury .mod .bt {
+    height: 100px;
+  }
+  #treasury .mod .bt .title {
+    height: 100px;
+  }
+  #treasury .mod .bt .icon {
+    height: 100px;
+    background-size: contain !important;
+  }
+  #it .proven .img-wrapper {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #ai .img-wrapper {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-height: 300px;
+  }
+  #ai .body {
+    position: static;
+  }
+  #ai .mod .bt {
+    height: 130px;
+  }
+  #ai .mod .bt .title {
+    height: 130px;
+  }
+  #ai .mod .bt .icon {
+    height: 130px;
+    background-size: contain !important;
+  }
+  #contact .p-15 {
+    padding: 0 15px !important;
+  }
+  .site-footer .copyright {
+    display: none;
+  }
+  .site-footer .social,
+  .site-footer .navigation {
+    width: 50%;
+  }
+  .site-footer .newsletter {
+    margin-bottom: 20px;
+  }
+  .site-footer .address {
+    text-align: left !important;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

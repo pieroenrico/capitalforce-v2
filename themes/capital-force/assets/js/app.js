@@ -39,6 +39,9 @@ $(document).ready(function(){
     $(document).on('click', 'a.navigator', function(e){
         e.preventDefault();
         $('html,body').animate({scrollTop: $('section' + $(this).attr('href')).offset().top - 80 }, 1000)
+        if( $('header.mobile').hasClass('active') ) {
+            $('header.mobile').removeClass('active');
+        }
     });
     $(document).on('click', '#treasury .bt', function(e){
         e.preventDefault();
@@ -58,4 +61,13 @@ $(document).ready(function(){
     $(window).scroll(function() {
         checkScroll()
     });
+
+    $(document).on('click', 'header.mobile .opener', function(e){
+        e.preventDefault();
+        if( $('header.mobile').hasClass('active') ) {
+            $('header.mobile').removeClass('active');
+        } else {
+            $('header.mobile').addClass('active');
+        }
+    })
 });
