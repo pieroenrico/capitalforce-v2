@@ -1,0 +1,27 @@
+description = "Blog Layout"
+==
+<!DOCTYPE html>
+<html lang="en">
+
+{% partial 'head' %}
+
+<body>
+
+{% partial 'preloader' %}
+{% partial 'header-blog' %}
+
+<!-- Main container -->
+<main class="main-container">
+
+    <div class="main-content no-padding">
+        {% page %}
+    </div><!--/.main-content -->
+
+    {% partial 'footer' %}
+</main>
+<!-- END Main container -->
+
+{% partial 'scripts' %}
+
+</body>
+</html>

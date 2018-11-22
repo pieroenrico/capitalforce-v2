@@ -1,0 +1,75 @@
+title = "Post"
+url = "/post/:slug"
+layout = "blog"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog/category"
+==
+{% set post = blogPost.post %}
+<div class="container-fluid no-padding blog">
+
+    <div class="row justify-content-center mt-20">
+
+        <div class="col-xs-8 col-sm-8 col-md-6">
+
+            <div class="post">
+
+                <a href="wqr"><h3>{{ post.title }}</h3></a>
+                
+                {% if post.featured_images.count %}
+                    <img src="{{ post.featured_images.first.path }}" alt="">
+                {% endif %}
+
+                <p class="excerpt">
+                    {{ post.content_html|raw }}
+                </p>
+
+                <hr>
+                <div class="meta">
+                    Posted
+                    {% if post.categories.count %} in
+                    {% for category in post.categories %}
+                    <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                    on {{ post.published_at|date('M d, Y') }}
+                </div>
+
+
+                <a href="{{ 'blog'|page }}" class="btn btn-primary btn-main-red btn-w-md mt-20">&lt; Back to Blog</a>
+
+            </div>
+
+        </div>
+
+        <div class="col-xs-4 col-sm-4 col-md-2">
+
+            <h2>Categories</h2>
+
+            {% if blogCategories.categories %}
+            <ul class="category-list">
+                {% for category in categories %}
+                {% set postCount = category.post_count %}
+                <li {% if category.slug == currentCategorySlug %}class="active"{% endif %}>
+                    <a href="{{ 'blog'|page({category:category.slug})}}">{{ category.name }}</a>
+                    {% if postCount %}
+                    <span class="badge">{{ postCount }}</span>
+                    {% endif %}
+                </li>
+                {% endfor %}
+
+            </ul>
+            {% endif %}
+
+
+        </div>
+    </div>
+
+</div>
