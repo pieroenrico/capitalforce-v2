@@ -1,4 +1,4 @@
-<?php namespace Tropa\Contact;
+<?php namespace Tropa\Subscriptions;
 
 use System\Classes\PluginBase;
 
@@ -7,7 +7,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Tropa\Contact\Components\ContactForm' => 'contactform',
+            'Tropa\Subscriptions\Components\SubscriptionForm' => 'subscriptionform',
         ];
     }
 

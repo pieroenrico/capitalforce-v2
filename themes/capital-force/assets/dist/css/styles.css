@@ -9077,6 +9077,15 @@ h3.standard {
   display: none;
 }
 
+.site-footer .newsletter .alert ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer .newsletter .alert ul li {
+  list-style-type: none;
+}
+
 .site-footer .newsletter .alert.alert-danger {
   background: #fff;
   border: 1px solid #fff;
@@ -9709,6 +9718,15 @@ h3.standard {
 
 #contact .alert {
   display: none;
+}
+
+#contact .alert ul {
+  margin: 0;
+  padding: 0;
+}
+
+#contact .alert ul li {
+  list-style-type: none;
 }
 
 #contact .alert.alert-danger {

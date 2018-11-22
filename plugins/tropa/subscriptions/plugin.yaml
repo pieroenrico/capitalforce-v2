@@ -1,0 +1,11 @@
+plugin:
+    name: 'tropa.subscriptions::lang.plugin.name'
+    description: 'tropa.subscriptions::lang.plugin.description'
+    author: Tropa
+    icon: oc-icon-users
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Newsletter
+        url: tropa/subscriptions/subscriptions
+        icon: icon-users

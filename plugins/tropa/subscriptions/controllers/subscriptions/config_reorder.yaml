@@ -1,0 +1,4 @@
+title: Subscriptions
+modelClass: Tropa\Subscriptions\Models\Subscription
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,10 @@
+columns:
+    name:
+        label: Name
+        type: text
+    email:
+        label: Email
+        type: text
+    created_at:
+        label: 'Received on'
+        type: datetime

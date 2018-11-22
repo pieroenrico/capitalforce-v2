@@ -54,59 +54,7 @@ $(document).ready(function(){
         $(this).addClass('active');
         $('#ai .copy#' + $(this).data('target')).hide().addClass('active').fadeIn(1000);
     });
-    $(document).on('click', '#contact .submitter', function(e){
-        e.preventDefault();
 
-        var name = $('#input-name').val();
-        var email = $('#input-email').val();
-        var message = $('#input-message').val();
-        var subscribe = $('#input-opt-in').is(':checked');
-
-        var fbDanger = $('#contact .alert.alert-danger');
-        var fbSuccess = $('#contact .alert.alert-success');
-
-        fbDanger.hide();
-        fbSuccess.hide();
-
-        if(name == '' || email == '' || message == '') {
-            fbDanger.html('Por favor completa todos los campos.').fadeIn();
-        } else {
-            if(!checkEmail(email)) {
-                fbDanger.html('El e-mail ingresado no es válido.').fadeIn();
-            } else {
-                fbSuccess.html('Hemos recibido tus datos. Muchas gracias.').fadeIn();
-                setTimeout(function () {
-                    fbSuccess.hide();
-                }, 2000)
-                clearForm()
-            }
-        }
-    });
-    $(document).on('click', '.newsletter .submitter', function(e){
-        e.preventDefault();
-
-        var email = $('#input-newsletter').val();
-
-        var fbDanger = $('.newsletter .alert.alert-danger');
-        var fbSuccess = $('.newsletter .alert.alert-success');
-
-        fbDanger.hide();
-        fbSuccess.hide();
-
-        if(email == '') {
-            fbDanger.html('Por favor completa todos los campos.').fadeIn();
-        } else {
-            if(!checkEmail(email)) {
-                fbDanger.html('El e-mail ingresado no es válido.').fadeIn();
-            } else {
-                fbSuccess.html('Hemos recibido tus datos. Muchas gracias.').fadeIn();
-                setTimeout(function () {
-                    fbSuccess.hide();
-                }, 2000)
-                $('#input-newsletter').val('');
-            }
-        }
-    });
     $(window).scroll(function() {
         checkScroll()
     });

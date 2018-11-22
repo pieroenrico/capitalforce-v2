@@ -5,6 +5,8 @@ is_hidden = 0
 
 [editable]
 file = "opening/link1.htm"
+
+[contactform]
 ==
 {% partial 'back' %}
 <div class="container-fluid no-padding home">
@@ -17,6 +19,17 @@ file = "opening/link1.htm"
         {% partial 'home/ai' %}
         {% partial 'home/alliance' %}
     </div>
-    {% partial 'home/contact' %}
+
+    <section id="contact" class="moduler">
+
+        <div class="row justify-content-center mb-40 no-gutters">
+            <div class="col-12 text-center mt-40">
+                <h1 class="standard">Contact Us</h1>
+            </div>
+        </div>
+
+        {% component 'contactform' %}
+
+    </section>
 
 </div>

@@ -4,3 +4,8 @@ plugin:
     author: Tropa
     icon: oc-icon-envelope
     homepage: ''
+navigation:
+    main-menu-item:
+        label: Contacts
+        url: tropa/contact/contacts
+        icon: icon-envelope

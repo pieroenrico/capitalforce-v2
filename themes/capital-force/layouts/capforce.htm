@@ -1,4 +1,13 @@
 description = "Blog Layout"
+
+[builderDetails]
+modelClass = "Tropa\CapitalForce\Models\CFSetting"
+identifierValue = 1
+modelKeyColumn = "id"
+displayColumn = "social_fb"
+notFoundMessage = "Record not found"
+
+[subscriptionform]
 ==
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +26,17 @@ description = "Blog Layout"
         {% page %}
     </div><!--/.main-content -->
 
-    {% partial 'footer' %}
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="row">
+            {% partial 'footer/copy' %}
+            {% partial 'footer/menu' %}
+            {% partial 'footer/social' %}
+            {% component 'subscriptionform' %}
+            {% partial 'footer/address' %}
+        </div>
+    </footer>
+    <!-- END Footer -->
 </main>
 <!-- END Main container -->
 

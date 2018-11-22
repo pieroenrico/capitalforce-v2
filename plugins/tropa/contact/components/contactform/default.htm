@@ -1,0 +1,32 @@
+<form data-request="{{ __SELF__ }}::onSend">
+
+    <div id="result"></div>
+
+    <div class="row justify-content-center mb-40 no-gutters">
+        <div class="col-4 p-15">
+            <div class="form-group">
+                <label for="input-normal">Name</label>
+                <input type="text" name="name" class="form-control" id="input-name" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <label for="input-normal">E-mail</label>
+                <input type="text" name="email" class="form-control" id="input-email" placeholder="Correo Electrónico">
+            </div>
+            <div class="form-group opt-in">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="input-opt-in" name="subscribe">
+                    <label class="custom-control-label" for="cc-1">Suscribirme al newsletter</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 p-15">
+            <div class="form-group">
+                <label for="input-normal">&nbsp;</label>
+                <textarea class="form-control" name="message" id="input-message" placeholder="Write your message..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-main-red btn-w-md submitter">Send</button>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,7 @@
+<div class="col-xs-12 col-sm-12 col-md-2 social">
+    <ul class="menu">
+        {% if record.social_fb != '' %}<li><a href="{{ record.social_fb }}"><i class="fa fa-facebook"></i> Facebook</a></li>{% endif %}
+        {% if record.social_tw != '' %}<li><a href="{{ record.social_tw }}"><i class="fa fa-twitter"></i> Twitter</a></li>{% endif %}
+        {% if record.social_ig != '' %}<li><a href="{{ record.social_ig }}"><i class="fa fa-instagram"></i> Instagram</a></li>{% endif %}
+    </ul>
+</div>

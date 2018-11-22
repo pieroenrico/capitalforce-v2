@@ -188,6 +188,13 @@ h3.standard {
   }
   .newsletter {
     .alert {
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style-type: none;
+        }
+      }
       display: none;
       &.alert-danger {
         background: #fff;
@@ -737,6 +744,13 @@ h3.standard {
   }
   .alert {
     display: none;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style-type: none;
+      }
+    }
     &.alert-danger {
       color: #fff;
       background-color: $main-red;

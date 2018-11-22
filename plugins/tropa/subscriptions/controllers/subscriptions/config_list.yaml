@@ -1,0 +1,12 @@
+list: $/tropa/subscriptions/models/subscription/columns.yaml
+modelClass: Tropa\Subscriptions\Models\Subscription
+title: Subscriptions
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'tropa/subscriptions/subscriptions/update/:id'

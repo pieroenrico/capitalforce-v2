@@ -1,0 +1,24 @@
+{% if errors|length %}
+<div class="alert alert-danger" role="alert" style="display:block;">
+    <ul>
+        {% for error in errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+{% if success %}
+<div class="alert alert-success" role="alert" style="display:block;">
+    {{ success }}
+</div>
+{% endif %}
+
+<script>
+    var errors = {{ errors|json_encode()|raw }}
+    var success = {{ success|json_encode()|raw }}
+
+    if($.isEmptyObject(errors) && !$.isEmptyObject(success)) {
+        $('#subscription-email').val('')
+    }
+</script>

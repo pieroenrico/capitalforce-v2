@@ -1,0 +1,31 @@
+<div class="row justify-content-center no-gutters">
+    <div class="col-8">
+
+        {% if errors|length %}
+        <div class="alert alert-danger" role="alert" style="display:block;">
+            <h5 class="mb-10">There's been errors while sending your message, please corrrect:</h5>
+            <ul>
+            {% for error in errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if success %}
+        <div class="alert alert-success" role="alert" style="display:block;">
+            {{ success }}
+        </div>
+        {% endif %}
+    </div>
+</div>
+<script>
+    var errors = {{ errors|json_encode()|raw }}
+    var success = {{ success|json_encode()|raw }}
+    if($.isEmptyObject(errors) && !$.isEmptyObject(success)) {
+
+        $('#input-name').val('')
+        $('#input-email').val('')
+        $('#input-message').val('')
+    }
+</script>

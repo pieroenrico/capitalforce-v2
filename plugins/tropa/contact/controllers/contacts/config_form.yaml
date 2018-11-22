@@ -1,0 +1,10 @@
+name: Contacts
+form: $/tropa/contact/models/contact/fields.yaml
+modelClass: Tropa\Contact\Models\Contact
+defaultRedirect: tropa/contact/contacts
+create:
+    redirect: 'tropa/contact/contacts/update/:id'
+    redirectClose: tropa/contact/contacts
+update:
+    redirect: tropa/contact/contacts
+    redirectClose: tropa/contact/contacts

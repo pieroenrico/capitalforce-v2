@@ -1,0 +1,10 @@
+name: Subscriptions
+form: $/tropa/subscriptions/models/subscription/fields.yaml
+modelClass: Tropa\Subscriptions\Models\Subscription
+defaultRedirect: tropa/subscriptions/subscriptions
+create:
+    redirect: 'tropa/subscriptions/subscriptions/update/:id'
+    redirectClose: tropa/subscriptions/subscriptions
+update:
+    redirect: tropa/subscriptions/subscriptions
+    redirectClose: tropa/subscriptions/subscriptions
